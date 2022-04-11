@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    background-color: #20223e;
+}
+
+header{
+    padding: 8px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #30365a;
+    height: 56px;
+}
+
+.title-header{
+    color: white;
+    font-size: 30px;
+}
+
+.input-search{
+    outline: none;
+    color:#858586;
+    background-color: transparent;
+    border: hidden;
+    border: 1px solid rgba(32, 28, 28, 0.493);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.input-search::placeholder{
+    font-weight: bold;
+    color:#616494;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 96%;
+}
+.title-search{
+    color: white;
+    font-size: 35px;
+}
+
+.box-movies{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie{
+    width: 225px;
+    height: auto;
+    margin: 8px;
+    box-shadow: 0px 0px 15px black;
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.movie-description{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin-top: -20px;
+    align-items: center;
+    background-color: #616494;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.title-movie{
+    color: rgb(206, 199, 199);
+    font-weight:700;
+}
+
+.indicator{
+    color: white;
+    font-weight: 700;
+    background-color: #21213f;
+    display: inline-block;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.indicator.green{
+    color: rgb(14, 119, 14);
+}
+
+.indicator.yellow{
+    color: rgb(153, 153, 13)
+}
+
+.indicator.red{
+    color: rgb(190, 16, 16);
+}
+
+.overview{
+    display: block;
+    background-color: white;
+    padding: 10px;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: all 0.5s 0s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.over-title{
+    font-size: 15px;
+}
+
+.over-body{
+    margin-top: -25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+    transition: all 0.8s 0.2s ease;
+}
